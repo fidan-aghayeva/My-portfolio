@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>BAND</title>
+</head>
+<body>
+    <header>
+        <ul class="firstmenu">
+            <li>
+                <a href="#carousel">home</a>
+            </li>
+            <li>
+                <a href="#theband">band</a>
+            </li>
+            <li>
+                <a href="#tourdates">tour</a>
+            </li>
+            <li>
+                <a href="#contact">contact</a>
+            </li>
+            <li class="dropmenu">
+                <a href="#">more <i class="fa fa-angle-down"></i></a>
+                <ul class="drop">
+                   <li><a href="#">Merchandise</a></li>
+                   <li><a href="#">Extras</a></li>
+                   <li><a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <a href="#" id="search"><i class="fa fa-search"></i></a>
+        <a id="hammenu" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <ul id="hamburgerul">
+            <li>
+                <a href="#theband">BAND</a>
+            </li>
+            <li>
+                <a href="#tourdates">TOUR</a>
+            </li>
+            <li>
+                <a href="#contact">CONTACT</a>
+            </li>
+            <li>
+                <a href="#">MORE</a>
+            </li>
+        </ul>
+    </header>
+    <section class="carousel" id="carousel">
+        <div class="container">
+            <div class="slide">
+               <div class="slide_content">
+                <h4>Los Angeles</h4>
+                <p>We had the best time playing at Venice Beach!</p>
+               </div>
+            </div>
+            <div class="slide">
+                <div class="slide_content">
+                    <h4>Chicago</h4>
+                    <p>Thank you, Chicago - A night we won't forget.</p>
+                </div>
+            </div>
+            <div class="slide">
+               <div class="slide_content">
+                <h4>New York</h4>
+                <p>The atmosphere in New York is lorem ipsum.</p>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="theband" id="theband">
+        <div class="title">
+            <h1>THE BAND</h1>
+            <i>We love music</i>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing 
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="images">
+            <div>
+                <h4>Name</h4>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+            </div>
+            <div>
+                <h4>Name</h4>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+            </div>
+            <div>
+                <h4>Name</h4>
+                <img src="https://www.w3schools.com/w3images/bandmember.jpg">
+            </div>
+        </div>
+    </section>
+    <section class="tourdates" id="tourdates">
+        <div class="firstdiv">
+            <h2>TOUR DATES</h2>
+            <i>Remember to book your tickets!</i>
+        </div>
+        <div class="months">
+            <ul>
+                <li>September <span>Sold out</span></li>
+                <li>October <span>Sold out</span></li>
+                <li  class="number">November <span>3</span></li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div>
+                <img src="https://www.w3schools.com/w3images/newyork.jpg">
+                <div class="card-content">
+                <h4>New York</h4>
+                <span>Fri 27 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.w3schools.com/w3images/paris.jpg">
+                <div class="card-content">
+                <h4>Paris</h4>
+                <span>Sat 28 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.w3schools.com/w3images/sanfran.jpg">
+                <div class="card-content">
+                <h4>San Francisco</h4>
+                <span>Sun 29 Nov 2016</span>
+                <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <a href="#">Buy Tickets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div>
+            <h1>CONTACT</h1>
+            <i>Fan? Drop a note!</i>
+        </div>
+        <div>
+            <ul>
+                <li><i class="fa fa-map-marker"></i> Chicago, US</li>
+                <li><i class="fa fa-phone"></i> Phone: +00 151515</li>
+                <li><i class="fa fa-envelope"></i>  Email: mail@mail.com</li>
+            </ul>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Message" class="message">
+                <button>SEND</button>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <img src="https://www.w3schools.com/w3images/map.jpg">
+    </section>
+    <footer>
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Designed by <a href="../index.html" target="_blank">fidanmirizada</a></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

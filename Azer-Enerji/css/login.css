@@ -1,0 +1,37 @@
+@import "common.css";
+
+.login {
+  background-color: #f2f5fb;
+  padding: 114px 0 150px 0;
+}
+
+.login h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 42px;
+}
+
+.login a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px !important;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #0a3352;
+  cursor: pointer;
+}
+.login span {
+  color: #1b77bd;
+}
+.login a:hover {
+  box-shadow: 0px 15px 35px -5px #a3afc6;
+}
+.login img {
+  width: 40px;
+}

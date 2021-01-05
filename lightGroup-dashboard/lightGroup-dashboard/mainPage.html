@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <link rel='icon' href='assets/img/survey.png' type= ' image/x-icon'/>
+  <!-- Bootstrap Styles-->
+  <link href="assets/lib/bootstrap.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-grid.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-reboot.css" rel="stylesheet" />
+  <!-- FontAwesome Styles-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+  <!-- Custom Styles-->
+  <link href="assets/sass/style.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts-->
+
+
+
+
+
+</head>
+
+<body>
+  <div class="wrapper d-flex align-items-stretch">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+      <div class="sidebarbutton">
+        <button type="button" id="sidebarCollapse" class="btn btn-outline-primary btn-lg text-right">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+  </div>
+
+      <div class="username d-flex align-items-center flex-column justify-content-center">
+        <h2 class="text-center" id="sideH2">
+          Mammadova Leyla
+        </h2>
+        <p class="badge badge-secondary">Admin</p>
+      </div>
+
+      <ul class="list-unstyled components align-self-center d-flex flex-column">
+        <li class="active">
+          <a href="mainPage.html"><i class="fas fa-rocket"></i> <span id="sideSpan">Dashboard</span> </a>
+        </li>
+        <li>
+          <a href="#" class="users-nav"><i class="fas fa-users"></i> <span id="sideSpan">
+              İstifadəçilər</span></a>
+          <ul class=" list-unstyled active dropdown align-items-center d-flex flex-column">
+            <li> <a href="allUsers.html"><i class="fas fa-users-cog"></i> <span id="sideSpan">Bütün</span></a></li>
+            <li><a href="newUser.html"><i class="fas fa-user-plus"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="surveys"><i class="fas fa-file-alt"></i> <span id="sideSpan">
+              Sorğular</span></a>
+          <ul class=" list-unstyled dropdown active  align-items-center d-flex flex-column">
+            <li class=""> <a href="allQueries.html"><i class="fas fa-file"></i> <span
+                  id="sideSpan">Bütün</span></a></li>
+            <li><a href="newform.html"><i class="fas fa-file-alt"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+
+        <li>
+
+          <a href="./profile.html"><i class="fas fa-cog"></i> <span id="sideSpan">Parametrlər </span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="footer text-center">
+        <a href="./mainPage.html"><i class="fas fa-sign-out-alt"></i> <span id="sideSpan">Profildən
+            çıxış</span></a>
+      </div>
+
+    </nav>
+    <div id="content" class="">
+      <div class="mobileMenuIcon"><i class="fa fa-bars"></i></div>
+      <section class="users-section min-vh-100 d-flex align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row justify-content-center align-items-stretch pt-4">
+            <div class="card top-big-card card-big col-sm-8">
+
+              <div class="card-body ">
+                <div class="card-content">
+
+                  <div class="row justify-content-between">
+
+                    <div class="card card-small col-md-3 col-12">
+                      <div class="card-body">
+                        <div class="card-content d-flex justify-content-center align-items-center">
+                          <div class="card-icon row justify-content-center d-flex align-items-center">
+                            <a href="./allQueries.html"><img src="assets/img/big-google-forms.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="card-title text-center my-2">
+                          <h4>100</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card card-small  col-md-3 col-12">
+                      <div class="card-body">
+                        <div class="card-content d-flex justify-content-center align-items-center">
+                          <div class="card-icon row justify-content-center d-flex align-items-center">
+                            <a href="./allUsers.html"> <img src="assets/img/Group 551.png" alt=""></a>
+                          </div>
+                        </div>
+                        <div class="card-title text-center my-2">
+                          <h4>100</h4>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="card card-small col-md-3 col-12">
+                      <div class="card-body">
+                        <!-- <div class="card-content d-flex justify-content-center align-items-center">
+           <div class="card-icon row justify-content-center d-flex align-items-center">
+            <img src="assets/img/Path 604.png" alt="">
+           </div>
+
+          </div> -->
+                        <div class="card-title text-center">
+                          <h4>Coming soon...</h4>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card top-small-card card-big  col-lg-3 col-8">
+              <div class="card-body">
+                <div class="card-title text-center my-2">
+                  <h4>Quick Actions</h4>
+                </div>
+
+                <div class="card-content d-flex flex-column justify-content-between">
+
+                  <div class="quick-action row justify-content-between ">
+                    <span class="quick-action-name ">New Form</span>
+                    <a class="btn btn-sm btn-outline-primary col-4" href="newform.html">Add</a>
+                  </div>
+
+                  <div class="quick-action   row justify-content-between ">
+                    <span class="quick-action-name ">New User</span>
+                    <a class="btn btn-sm btn-outline-primary col-4" href="newUser.html">Add</a>
+                  </div>
+
+                  <div class="quick-action   row justify-content-between ">
+                    <span class="quick-action-name ">Change Password</span>
+                    <a class="btn btn-sm btn-outline-primary col-4" href="profile.html">Go</a>
+                  </div>
+
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="bottom-card card  card-big ">
+
+            <div class="card-body">
+
+              <div class="card-content col-12">
+                <div class="row justify-content-between  align-items-end ">
+                  <div class="card card-small col-md-3 col-12">
+                    <div class="card-body">
+                      <div class="card-content d-flex justify-content-center align-items-center">
+
+                        <a href="results.html">
+                          <div class="small-card-text">
+                            <h3>Research One</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem modi! Maxime
+                              voluptatum
+                              perspiciatis ab quidem deserunt totam quia hic natus? Deleniti, magni illum enim veniam
+                              cupiditate
+                              doloremque ab architecto.</p>
+  
+                            <div class="row">
+                              <span class="read-number ">
+                                <img src="assets/img/Group 548.png" alt=""> 113</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="card card-small col-md-3 col-12">
+                    <div class="card-body">
+                      <div class="card-content d-flex justify-content-center align-items-center">
+
+                        <a href="results.html">
+                          <div class="small-card-text">
+                            <h3>Research One</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem modi! Maxime
+                              voluptatum
+                              perspiciatis ab quidem deserunt totam quia hic natus? Deleniti, magni illum enim veniam
+                              cupiditate
+                              doloremque ab architecto.</p>
+  
+                            <div class="row">
+                              <span class="read-number ">
+                                <img src="assets/img/Group 548.png" alt=""> 113</span>
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                  <div class="card card-small col-md-3 col-12">
+                    <div class="card-body">
+                      <div class="card-content d-flex justify-content-center align-items-center">
+                        <a href="results.html">
+                          <div class="small-card-text">
+                            <h3>Research One </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, rem modi! Maxime
+                              voluptatum
+                              perspiciatis ab quidem deserunt totam quia hic natus? Deleniti, magni illum enim veniam
+                              cupiditate
+                              doloremque ab architecto.</p>
+  
+                            <div class="row">
+                              <span class="read-number ">
+                                <img src="assets/img/Group 548.png" alt=""> 113</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+
+                  <a class="btn col-md-2 col-12 btn-outline-primary " href="results.html">See All</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

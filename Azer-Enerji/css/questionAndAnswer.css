@@ -1,0 +1,81 @@
+@import "common.css";
+
+.questionAndAnswer {
+  background-color: #f2f5fb;
+  padding: 114px 0 150px 0;
+}
+
+.relatedDocuments {
+  padding: 114px 0 85px 0;
+  background-color: #f2f5fb;
+}
+
+.questionAndAnswer h3,
+.relatedDocuments h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 42px;
+}
+
+.questionAndAnswer p,
+.documentsItems div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 30px !important;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.questionAndAnswer p:hover,
+.documentsItems div:hover {
+  box-shadow: 0px 15px 35px -5px #a3afc6;
+}
+
+.questionAndAnswer a,
+.questionAndAnswer a:hover,
+.documentsItems a,
+.documentsItems a:hover {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0a3352;
+  display: flex;
+  width: 100%;
+}
+
+.documentsItems img {
+  margin: 0 10px;
+}
+
+.controlCarousel i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  margin: 0 10px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 50%;
+  color: #1b77bd;
+  cursor: pointer;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  font-size: 16px !important;
+  padding: 0 !important;
+  margin-left: 15px !important;
+  line-height: 1.8 !important;
+  color: #1b77bd;
+  background-color: transparent !important;
+  border: none !important;
+}
+.page-link:focus {
+  outline: none !important;
+}

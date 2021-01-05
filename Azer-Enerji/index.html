@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AzerEnerji</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- fancyBox -->
+    <script src="./fancybox-master/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="./fancybox-master/dist/jquery.fancybox.css" />
+    <script src="./fancybox-master/dist/jquery.fancybox.js"></script>
+    <link rel="stylesheet" href="./fancybox-master/dist/jquery.fancybox.min.css" />
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-2">
+                    <div>
+                        <a href="./index.html"><img src="./images/logo.png" alt="Logo" class="logo" /></a>
+                        <span class="line"></span>
+                        <div class="title">
+                            <span>Enerji Məsələlərini<br />Tənzimləmə Agentliyi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-10 d-flex align-items-center justify-content-end">
+                    <form class="form">
+                        <div class="search">
+                            <input type="text" placeholder="Axtarış..." />
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                    <div class="socialMediaIcons px-4">
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <span class="call"> <i class="fa fa-phone"></i> 974 </span>
+                    <ul class="langMenu">
+                        <li>AZ <i class="fa fa-angle-down"></i></li>
+                        <ul class="subLangMenu">
+                            <li><a href="">AZ</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <section class="menu">
+        <div class="menuAbsolute">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 navMenu">
+                        <div class="homeIcon">
+                            <a class="navbar-brand" class="homeIcon" href="./index.html">
+                                <i class="fa fa-home"></i>
+                                <span class="line2"></span>
+                            </a>
+                        </div>
+                        <nav id="menu">
+                            <label for="tm" id="toggle-menu">
+                                <form action="">
+                                    <div class="search">
+                                        <input type="text" placeholder="Axtarış..." />
+                                        <a href=""><i class="fa fa-search"></i></a>
+                                    </div>
+                                </form>
+                                <span class="drop-icon barIcon">
+                                    <div onclick="myFunction(this)">
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                    </div>
+                                </span>
+                            </label>
+                            <input type="checkbox" id="tm" />
+                            <ul class="main-menu clearfix">
+                                <li>
+                                    <a href="#">Agentlik
+                                        <span class="drop-icon"><i class="fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm0"><i
+                                                class="fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm0" />
+                                    <ul class="sub-menu">
+                                        <li><a href="./about.html">Haqqımızda</a></li>
+                                        <li>
+                                            <a href="./charterOfTheAgency.html">Agentliyin nizamnaməsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fəaliyyət istiqamətləri
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i>
+                                                    <i class="fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm1"><i
+                                                        class="fa fa-angle-right"></i>
+                                                    <i class="fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm1" />
+                                            <ul class="sub-menu">
+                                                <li><a href="./regulation.html">Tənzimləmə</a></li>
+                                                <li><a href="./control.html">Nəzarət</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Rəhbərlik
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i><i
+                                                        class="fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm2"><i
+                                                        class="fa fa-angle-right"></i><i
+                                                        class="fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm2" />
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="./leaderShip.html">İdarə heyətinin sədri</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./deputy.html">İdarə heyətinin sədrinin müavinləri</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Struktur</a></li>
+                                        <li><a href="./reports.html">İllik hesabatlar</a></li>
+                                        <li>
+                                            <a href="./internationalCooperation.html">Beynəlxalq əməkdaşlıq</a>
+                                        </li>
+                                        <li><a href="./branches.html">Filiallar</a></li>
+                                        <li>
+                                            <a href="#">Vakansiyalar
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i><i
+                                                        class="fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm3"><i
+                                                        class="fa fa-angle-right"></i><i
+                                                        class="fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm3" />
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="./vacancies.html">Mövcud vakansiyalar</a>
+                                                </li>
+                                                <li>
+                                                    <a href="./recruitmentRules.html">İşə qəbul qaydaları</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Qanunvericilik
+                                        <span class="drop-icon"><i class="fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm4"><i
+                                                class="fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm4" />
+                                    <ul class="sub-menu">
+                                        <li><a href="./laws.html">Qanunlar</a></li>
+                                        <li>
+                                            <a href="./orders.html">Prezidentin qanun və sərəncamları</a>
+                                        </li>
+                                        <li>
+                                            <a href="./ministersLaws.html">Nazirlər kabinetinin qərar və
+                                                sərəncamları</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">İstehlakçılar
+                                        <span class="drop-icon"><i class="fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm5"><i
+                                                class="fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm5" />
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="./household.html">Məişət və qeyri-məişət</a>
+                                        </li>
+                                        <li>
+                                            <a href="./subConsumer.html">Biz istehlakçılar üçün nə edirik?</a>
+                                        </li>
+                                        <li><a href="./debt.html">Borcunu öyrən</a></li>
+                                        <li><a href="./apply.html">Bizə müraciət et</a></li>
+                                        <li>
+                                            <a href="./citizenAppeals.html">Vətəndaş müraciətləri (statistika)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Elektron xidmətlər
+                                        <span class="drop-icon"><i class="fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm6"><i
+                                                class="fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm6" />
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="./login.html">Elektrik qurğularının istismarına buraxılış aktının
+                                                verilməsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="./login.html">Elektrik enerjisi təchizatı üzrə layihələrin
+                                                razılaşdırılması
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./login.html">Qaz təchizatı üzrə layihələrin razılaşdırılması
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="./login.html">Sənaye qaz qurğularının istismarına icazə</a>
+                                        </li>
+                                        <li>
+                                            <a href="./login.html">Texniki istismar və Texniki Təhlükəsizlik qaydaları
+                                                üzrə biliyin yoxlanılması</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <a href="#">Media
+                                        <span class="drop-icon"><i class="fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm7"><i
+                                                class="fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm7" />
+                                    <ul class="sub-menu">
+                                        <li><a href="./pressReliz.html">Press-relizlər</a></li>
+                                        <li>
+                                            <a href="./whatTheMediaWrites.html">Bizim haqqımızda media nə yazır</a>
+                                        </li>
+                                        <li>
+                                            <a href="./presentation.html">Nitqlər və təqdimatlar</a>
+                                        </li>
+                                        <li><a href="./photoGalery.html">Fotoqalereya</a></li>
+                                        <li><a href="./videoGalery.html">Videoqalereya</a></li>
+                                    </ul>
+                                </li>
+                                <li class="socialMediaIcons">
+                                    <a href=""><i class="fa fa-facebook-f"></i></a>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- slider section -->
+    <div class="slider-container">
+        <div class="sliderImg">
+            <img src="./images/slide1.png" alt="" />
+        </div>
+        <div class="sliderContent" id="slider">
+            <div class="slide">
+                <div>
+                    <div class="news">
+                        <a href="./news.html">XƏBƏRLƏR</a>
+                        <span><i class="fa fa-clock-o"></i> 17 avqust 2020</span>
+                        <span><i class="fa fa-eye"></i> 205</span>
+                    </div>
+                    <div class="title2 pt-3">
+                        <h4>
+                            Elektrik stansiyalarında audit mövzusunda<br />
+                            təlim keçirilib <span>1</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <div class="news">
+                        <a href="./news.html">XƏBƏRLƏR</a>
+                        <span><i class="fa fa-clock-o"></i> 17 avqust 2020</span>
+                        <span><i class="fa fa-eye"></i> 205</span>
+                    </div>
+                    <div class="title2 pt-3">
+                        <h4>
+                            Elektrik stansiyalarında audit mövzusunda<br />
+                            təlim keçirilib <span>2</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <div class="news">
+                        <a href="./news.html">XƏBƏRLƏR</a>
+                        <span><i class="fa fa-clock-o"></i> 17 avqust 2020</span>
+                        <span><i class="fa fa-eye"></i> 205</span>
+                    </div>
+                    <div class="title2 pt-3">
+                        <h4>
+                            Elektrik stansiyalarında audit mövzusunda<br />
+                            təlim keçirilib <span>3</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div>
+                    <div class="news">
+                        <a href="./news.html">XƏBƏRLƏR</a>
+                        <span><i class="fa fa-clock-o"></i> 17 avqust 2020</span>
+                        <span><i class="fa fa-eye"></i> 205</span>
+                    </div>
+                    <div class="title2 pt-3">
+                        <h4>
+                            Elektrik stansiyalarında audit mövzusunda<br />
+                            təlim keçirilib <span>4</span>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="control">
+                <a href="javascript:prev()"><i class="fa fa-angle-left"></i> Əvvəl</a>
+                <a href="javascript:next()">Sonraki <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <section class="mainContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <a href="./electricityEnergy.html">
+                        <div class="cardItems">
+                            <img src="./images/elektrik.png" alt="" />
+                            <p>Elektrik enerjisi</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <a href="./naturalGas.html">
+                        <div class="cardItems">
+                            <img src="./images/qaz.png" alt="" />
+                            <p>Təbii qaz</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <a href="./heat.html">
+                        <div class="cardItems">
+                            <img src="./images/istilik.png" alt="" />
+                            <p>İstilik</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 itemsParent">
+                    <div class="items">
+                        <div>
+                            <a href="./advertisementHome.html">ELANLAR</a>
+                            <p>Agentlik tender elan edir!</p>
+                        </div>
+                        <div>
+                            <a href="./advertisementHome.html" class="more">Ətraflı <span></span><i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 itemsParent">
+                    <div class="items">
+                        <div>
+                            <a href="./technicalCouncils.html">TEXNIKI ŞURALAR</a>
+                            <p>Hazırda 12 Texniki Şura fəaliyyət göstərir</p>
+                        </div>
+                        <div>
+                            <a href="./technicalCouncils.html" class="more">Ətraflı <span></span><i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 mediaMarginBottom">
+                    <div class="items">
+                        <div>
+                            <a href="">Enerjiyə qənaət</a>
+                            <p>Elektrik şəbəkəsi vasitəsilə enerjiyə qənaət etmək olar.</p>
+                        </div>
+                        <div>
+                            <a href="" class="more">Ətraflı <span></span><i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+                    <div class="items">
+                        <div>
+                            <a href="./e-library.html">E-kitabxana</a>
+                            <p>
+                                Enerji sahəsinə aid sözlərin terminoloji izahı, hesabat
+                                xarakterli digər məlumatlar, infoqrafika və rəqəmlər.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="./e-library.html" class="more">Ətraflı <span></span><i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+                    <div class="cardContainer">
+                        <h2 class="cardsTitle">BEYNƏLXALQ MÜNASİBƏTLƏR</h2>
+                        <div class="card">
+                            <img src="./images/internationalCooperation.png" alt="Card image cap" />
+                            <div class="cardBody">
+                                <div>
+                                    <p class="cardText">
+                                        Mingəçevir filialı fəaliyyətə başlayıb
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./internationalCooperation.html" class="more">Ətraflı <span></span><i
+                                            class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12">
+                    <div class="cardContainer">
+                        <h2 class="cardsTitle">VİDEO GALEREYA</h2>
+                        <div class="card videoPlay">
+                            <a data-fancybox href="https://www.youtube.com/watch?v=4Mp4w2t8d4g" class="fancyBox">
+                                <i class="fa fa-play-circle"></i>
+                                <img src="./images/cooperation1 (3).png" alt="" />
+                            </a>
+                            <div class="cardBody">
+                                <div>
+                                    <p class="cardText">
+                                        Enerji Məsələlərini Tənzimləmə Agentliyi telefon rabitəsi
+                                        ilə vətəndaş qəbulu keçirib
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="./video.html" class="more">Ətraflı <span></span><i
+                                            class="fa fa-angle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="numbers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                        <div class="numbersItem">
+                            <span>2017</span>
+                            <p>
+                                Enerji Məsələlərini Tənzimləmə Agentliyinin təsis olunduğu
+                                tarix
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                        <div class="numbersItem">
+                            <span>33</span>
+                            <p>
+                                Enerji Tənzimləyicilərinin Regional Assosiasiyası üzvlərinin
+                                sayı
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                        <div class="numbersItem">
+                            <span>29</span>
+                            <p>
+                                Avropa Enerji Tənzimləyiciləri Şurasına üzv dövlətlərin sayı
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="reports">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="content">
+                        <img src="./images/reports.png" alt="" />
+                        <a href="./reports.html">Hesabatlar</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="content">
+                        <img src="./images/eServices.png" alt="" />
+                        <a href="./eServices.html">Elektron xidmətlər</a>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="content">
+                        <img src="./images/calculator.png" alt="" />
+                        <a href="./calculator.html">Kalkulyator</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 map">
+                    <h2>FİLİALLAR</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3122459.0483422116!2d45.5106334909111!3d40.15839899647388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307cd91aa21ddf%3A0xe6c9526b3e83cd08!2sAz%C9%99rbaycan!5e0!3m2!1saz!2s!4v1601641693836!5m2!1saz!2s"
+                        width="600" height="490" frameborder="0" style="border: 0" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 contactInfo pl-5 pt-5">
+                    <div class="vacancies">
+                        <div>
+                            <a href="./vacancies.html" class="boxlink"><i class="fa fa-search"></i></a>
+                            <a href="./vacancies.html" class="boxtext">Vakansiyalar</a>
+                        </div>
+                        <div>
+                            <a href="./questionAndAnswer.html" class="boxlink"><i class="fa fa-comments"></i></a>
+                            <a href="./questionAndAnswer.html" class="boxtext">Sual-cavab</a>
+                        </div>
+                    </div>
+                    <div class="formContact">
+                        <p>Online müraciət</p>
+                        <form action="">
+                            <label
+                                class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-inline-flex justify-content-start align-items-center">Ad,
+                                soyad, ata adı:</label>
+                            <input type="text" name="" id="" placeholder="Adınızı daxil edin..."
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-inline-flex justify-content-end align-items-center" />
+                            <label
+                                class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-inline-flex justify-content-start align-items-center">Telefon:</label>
+                            <input type="text" name="" id="" placeholder="Telefon nömrenizi daxil edin..."
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-inline-flex justify-content-end align-items-center" />
+                            <label
+                                class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-inline-flex justify-content-start align-items-center">E-mail:</label>
+                            <input type="email" name="" id="" placeholder="E-mail"
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-inline-flex justify-content-end align-items-center" />
+                            <label
+                                class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-inline-flex justify-content-start align-items-center">Müraciətin
+                                növü:</label>
+                            <select
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-inline-flex justify-content-end align-items-center">
+                                <option value="">
+                                    Təklif <i class="fa fa-angle-down"></i>
+                                </option>
+                                <option value="">Təklif</option>
+                                <option value="">Təklif</option>
+                            </select>
+                            <label
+                                class="col-xs-12 col-sm-12 col-md-5 col-lg-5 d-inline-flex justify-content-start align-items-center">Mətn:</label>
+                            <input type="text" name="" id="" placeholder="Burada yazın..."
+                                class="col-xs-12 col-sm-12 col-md-6 col-lg-6 d-inline-flex justify-content-end align-items-center" />
+                            <button>Müraciət et</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="logoContainer">
+                <div class="logos">
+                    <img src="./images/image 14.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 17.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 18.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 20.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 15.png" alt="" />
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div>
+                        <img src="./images/footerLogo.png" alt="" />
+                        <p class="logoParagraf">
+                            Enerji Məsələlərini Tənzimləmə Agentliyi
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="footerItem">
+                        <h5>Kontaktlar</h5>
+                        <ul>
+                            <li>Telefon: <span>(+994 12) 598-16-53/54/55</span></li>
+                            <li>Faks: <span>(+994 12) 566-09-40</span></li>
+                            <li>Email: <a href="">office@regulator.gov.az</a></li>
+                            <li class="address">
+                                Baş Ofis:
+                                <span>Bakı şəhəri, Heydər Əliyev prospekti 152 "Çinar Plaza"
+                                    Biznes Mərkəzi, AZ1029</span>
+                            </li>
+                        </ul>
+                        <div class="contactFooter">
+                            <span><i class="fa fa-phone"></i>974</span>
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="footerItem">
+                        <h5>Faydalı keçidlər</h5>
+                        <ul>
+                            <li><a href="">Azərbaycan Respublikasının Prezidenti</a></li>
+                            <li><a href="">Milli Məclis</a></li>
+                            <li><a href="">Nazirlər Kabineti</a></li>
+                            <li><a href="">Heydər Əliyev Fondu</a></li>
+                            <li><a href="">Energetika Nazirliyi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="author text-center">
+            <p>AERA © 2020 All Right Reserved. Developed by Webcoder</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    text-transform: uppercase;
+    font-weight: 400; /* yazinin qalinligi,px yazilmir 100-900 arasi qiymet alir */
+    box-shadow: 0 0 10px 0 grey;
+}
+ul {
+    list-style: none;
+}
+.firstmenu li {
+    float: left;
+    padding: 15px 25px;
+}
+.firstmenu li a {
+    text-decoration: none;
+    color: white;
+}
+.firstmenu li:hover {
+    background-color: grey;
+}
+.drop {
+    width: 150px;
+    top: 48px;
+    left: 410px;
+    position: absolute;
+    background-color: white;
+    display: none;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1),0 2px 0 2px rgba(0, 0, 0, 0.1);
+}
+.dropmenu:hover .drop {
+   display: block;
+}
+.drop li {
+    float: none;
+    padding: 10px 20px;
+}
+.drop li a {
+    color: black;
+    font-size: 16px;
+}
+#hammenu {
+    display: none;
+}
+#search, #hammenu {
+   padding: 15px 25px;
+   color: #fff;
+}
+#search:hover {
+    background-color: rgb(228, 18, 18);
+}
+#hammenu:hover {
+    background-color: grey;
+}
+#hamburgerul {
+    width: 100%;
+    position: absolute;
+    top: 45px;
+    display: none;
+}
+#hamburgerul li {
+    float: none;
+    background-color: black;
+}
+.active {
+    display: block !important;
+}
+.carousel {
+    width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+}
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+}
+.slide_content {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+}
+.slide:first-child{
+    background-image: url(https://static.billboard.com/files/media/scorpions-perform-oct-2017-a-billboard-1548-1024x677.jpg);
+}
+.slide:nth-child(2)
+{
+    background-image: url(https://usercontent1.hubstatic.com/14483436_f1024.jpg);
+}
+.slide:last-child {
+    background-image: url(https://i.cbc.ca/1.5647039.1594589544!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/great-white-band-show-covid-19.jpg);
+}
+.carousel h4 {
+    font-size: 30px;
+}
+.carousel p {
+    font-size: 20px;
+}
+.theband {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 80px 300px;
+}
+.title {
+    width: 100%;
+    text-align: center;
+}
+.title h1 {
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: rgb(19, 19, 19);
+    font-weight: 200;
+}
+.title i {
+    display: inline-block;
+    color: grey;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.images {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.images div {
+    width: 25%;
+    text-align: center;
+}
+.images img {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+.tourdates {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: black;
+    padding: 80px 300px;
+}
+.firstdiv {
+    text-align: center;
+}
+.tourdates div:first-child h2 {
+    color: white;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 5px;
+}
+.tourdates div:first-child i {
+    display: inline-block;
+    color: grey;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+.months
+{
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+.tourdates ul {
+    width: 100%;
+}
+.tourdates ul li {
+    float: none;
+    padding: 10px;
+    border-bottom: 1px solid rgb(184, 182, 182);
+    color: rgb(112, 112, 112);
+}
+.tourdates ul li span {
+    display: inline-block;
+    padding: 2px 8px;
+    background-color: rgb(243, 42, 42);
+    color: white;
+    margin-left: 20px;
+}
+.number {
+    display: flex;
+    justify-content: space-between;
+}
+.number span {
+    border-radius: 50%;
+    background-color: black !important;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.cards>div {
+    width: 30%;
+    background-color: white;
+}
+.cards img {
+    width: 100%;
+}
+.cards img:hover {
+   opacity: 0.8;
+}
+.card-content {
+    padding: 15px 15px 25px 15px;
+}
+.card-content h4 {
+    font-size: 20px;
+}
+.card-content span {
+    display: inline-block;
+    color: grey;
+    font-weight: 100;
+    padding: 15px 0;
+}
+.card-content p {
+    color: rgb(32, 32, 32);
+    padding-bottom: 30px;
+}
+.card-content a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    transition: all 2s ease-in-out;
+}
+.card-content a:hover {
+    color: black;
+    background-color: rgb(145, 144, 144);
+}
+.contact {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 80px 300px;
+}
+.contact div:first-child {
+    text-align: center;
+}
+.contact h1 {
+    letter-spacing: 5px;
+    font-size: 35px;
+    font-weight: 200;
+}
+.contact div:first-child i {
+    color: grey;
+    display: inline-block;
+    padding: 30px 0;
+}
+.contact ul {
+    width: 40%;
+    float: left;
+}
+.contact ul li {
+    font-size: 20px;
+    font-weight: 100;
+    padding: 3px 0;
+}
+.contact ul li i {
+    padding-right: 10px;
+}
+.contact form {
+    width: 60%;
+    float: left;
+    text-align: right;
+}
+.contact input {
+    padding: 10px 5px;
+    margin:0 10px 10px 0;
+}
+.message {
+    padding: 10px 190px 10px 18px !important;
+}
+.contact button {
+    display: flex;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    font-size: 16px;
+    margin-left: 60px;
+    transition: background-color 2s ease-in;
+}
+.contact button:hover {
+    color: black;
+    background-color: rgb(145, 144, 144);
+}
+.map {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.map img {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 50px 0;
+    text-align: center;
+    line-height: 40px;
+    color: grey;
+    font-size: 20px;
+}
+footer i {
+    font-size: 25px !important;
+    padding-right: 10px;
+    transition: all 2s ease-in-out;
+}
+footer i:hover {
+    opacity: 0.5;
+}
+footer a {
+    color:grey;
+}

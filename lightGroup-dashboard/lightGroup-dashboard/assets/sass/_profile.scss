@@ -1,0 +1,106 @@
+@import "navbar";
+
+.profileSection {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+
+}
+
+.card {
+  background-color: $light-grey;
+  @include shadow-box;
+
+  .card-title {
+    h4 {
+      font-size: 35px;
+      color: $medium-grey;
+      margin-bottom: 25px;
+    }
+  }
+
+  .card-content {
+    color: $dark-grey;
+   
+    
+  }
+}
+
+
+.profile {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  flex-wrap: wrap;
+
+  .profile_form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-grow: 0;
+   
+ 
+    border-radius: 2px;
+
+    background-color: #f8f8f8;
+    box-shadow: 5px 5px 10px rgba(#024a98, 0.05);
+ 
+    .title {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 15px;
+
+      h3 {
+        color: #8d8d8d;
+        font-size: 35px;
+        font-weight: 400;
+      }
+    }
+
+    .profileForm {
+      div {
+       
+      
+        input {
+          width: 100%;
+          border: 1.5px solid #c9c7c7;
+          border-radius: 4px;
+          margin-bottom: 20px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .save {
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
+
+      button {
+        background-color: transparent;
+        border: 1px solid #007bff;
+        color: #007bff;
+        border-radius: 3px;
+        padding: 3px 10px;
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          background-color: #007bff;
+          color: white;
+        }
+      }
+    }
+  }
+}

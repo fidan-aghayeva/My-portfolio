@@ -1,0 +1,23 @@
+@import 'common.css';
+
+.regulationControl {
+    background-color: #f2f5fb;
+}
+
+.content {
+    padding: 57px 0 200px 0;
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #1b77bd;
+    padding-bottom: 42px;
+}
+
+.content p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #0A3352;
+    line-height: 20px;
+}

@@ -1,0 +1,46 @@
+@import 'common.css';
+
+.laws {
+    background-color: #f2f5fb;
+    padding: 57px 0;
+}
+
+.reports {
+    padding-bottom: 384px;
+}
+
+.recruitmentRules {
+    padding-bottom: 150px !important;
+}
+
+.content h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #1b77bd;
+    padding-bottom: 12px;
+}
+
+.content h5 {
+    color: #0A3352;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+.content ul {
+    list-style: circle !important;
+    padding-left: 15px;
+}
+
+.content ul li {
+    padding-bottom: 10px;
+}
+
+.content ul li a {
+    color: #0A3352;
+    font-size: 16px;
+}
+
+.underline li:first-child a {
+    text-decoration: underline !important;
+}

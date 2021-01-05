@@ -1,0 +1,67 @@
+@import "common.css";
+
+.photoGalery {
+  padding: 114px 0 85px 0;
+  background-color: #f2f5fb;
+}
+
+.photoGalery h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 42px;
+}
+
+.photoGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 77px;
+  flex-direction: row;
+}
+
+.photoGroup a {
+  width: 23%;
+  font-weight: 600;
+}
+
+.photoGroup p {
+  padding-top: 24px;
+  display: flex;
+  color: #0a3352;
+}
+
+.photoGroup img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+.photoGalery img:hover {
+  box-shadow: 0px 10px 14px -6px #a3afc6;
+}
+.controlCarousel i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 50%;
+  color: #1b77bd;
+  cursor: pointer;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  font-size: 16px !important;
+  padding: 0 !important;
+  margin: 0 5px !important;
+  line-height: 1.8 !important;
+  color: #1b77bd;
+  background-color: transparent !important;
+  border: none !important;
+}
+.page-link:focus {
+  outline: none !important;
+}

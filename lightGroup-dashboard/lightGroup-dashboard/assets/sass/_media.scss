@@ -1,0 +1,28 @@
+@media only screen and (max-width:576px) {
+  #content {
+    width: 85%;
+  }
+
+  .profile {
+    .profile_form {
+      padding: 40px 0;
+
+      form div {
+        width: 100%;
+      }
+    }
+  }
+
+  .other {
+    .btn {
+      display: block;
+      margin: 0 auto 10px auto;
+
+    }
+  }
+}
+@media only screen and (max-width:768px){
+  .new-user {
+    margin-top: 40px !important;
+  }
+}

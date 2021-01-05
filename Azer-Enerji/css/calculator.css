@@ -1,0 +1,62 @@
+@import 'common.css';
+
+.calculator {
+    position: relative;
+    background-color: #f2f5fb; 
+    height: auto;
+    overflow: hidden;
+    padding-top: 114px;
+    padding-bottom: 150px;
+}
+.calculator h3 {
+    font-weight: 600;
+    color: #1b77bd;
+    font-size: 25px;
+    padding-bottom: 40px;
+}
+
+.calculator label {
+    display: flex;
+    color: #0A3352;
+    font-size: 16px;
+    font-weight: 300;
+    text-indent: 20px;
+}
+
+.calculator select {
+    width: 570px;
+    border-radius: 15px;
+    background-color: white;
+    height: 45px;
+    color: #0A3352;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.calculator select:focus {
+    outline: none;
+}
+
+.calculator button {
+    width: 148px;
+    height: 35px;
+    color: white;
+    background-color: #1b77bd;
+    border: none;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: all .3s ease;
+}
+.calculator button:focus {
+    outline: none;
+}
+.calculator button:hover {
+    background-color: white;
+    color: #1b77bd;
+    box-shadow: 0px 10px 14px -6px #a3afc6;
+}

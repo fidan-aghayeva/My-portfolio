@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New User</title>
+  <link rel='icon' href='assets/img/survey.png' type= ' image/x-icon'/>
+  <!-- Bootstrap Styles-->
+  <link href="assets/lib/bootstrap.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-grid.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-reboot.css" rel="stylesheet" />
+  <!-- FontAwesome Styles-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles-->
+  <link href="assets/sass/style.css" rel="stylesheet" />
+
+
+
+  <!-- Google Fonts-->
+
+
+
+
+
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+      <div class="sidebarbutton">
+        <button type="button" id="sidebarCollapse" class="btn btn-outline-primary btn-lg text-right">
+          <i class="fa fa-bars"></i>
+          <span class="sr-only">Toggle Menu</span>
+        </button>
+  </div>
+
+      <div class="username d-flex align-items-center flex-column justify-content-center">
+        <h2 class="text-center" id="sideH2">
+          Mammadova Leyla
+        </h2>
+        <p class="badge badge-secondary">Admin</p>
+      </div>
+
+      <ul class="list-unstyled components align-self-center d-flex flex-column">
+        <li class="">
+          <a href="mainPage.html"><i class="fas fa-rocket"></i> <span id="sideSpan">Dashboard</span> </a>
+        </li>
+        <li>
+          <a href="#" class="users-nav"><i class="fas fa-users"></i> <span id="sideSpan">
+              İstifadəçilər</span></a>
+          <ul class=" list-unstyled active  align-items-center d-flex flex-column">
+            <li> <a href="allUsers.html"><i class="fas fa-users-cog"></i> <span id="sideSpan">Bütün</span></a></li>
+            <li class="active"><a href="newUser.html"><i class="fas fa-user-plus"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="surveys"><i class="fas fa-file"></i> <span id="sideSpan">
+              Sorğular</span></a>
+          <ul class=" list-unstyled dropdown active  align-items-center d-flex flex-column">
+            <li> <a href="allQueries.html"><i class="fas fa-file-alt"></i> <span
+                  id="sideSpan">Bütün</span></a></li>
+            <li><a href="newform.html"><i class="fas fa-file"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+
+        <li>
+
+          <a href="./profile.html"><i class="fas fa-cog"></i> <span id="sideSpan">Parametrlər </span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="footer text-center">
+        <a href="./mainPage.html"><i class="fas fa-sign-out-alt"></i> <span id="sideSpan">Profildən
+            çıxış</span></a>
+      </div>
+
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" class="">
+      <div class="mobileMenuIcon"><i class="fa fa-bars"></i></div>
+      <section class="users-section new-user min-vh-100 d-flex align-items-center justify-content-center py-4">
+        <div class="container">
+          <div class="row">
+            <div class="card col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  mx-auto  p-10">
+              <div class="card-body">
+                <div class="card-title text-center my-2">
+                  <h4>Yeni İstifadəçi</h4>
+                </div>
+
+                <div class="card-content">
+                  <form>
+                    <div class="form-row justify-content-around d-flex">
+                      <div class="form-group col-sm-5 col-12">
+                        <label for="username">İstifadəçi adı</label>
+                        <input type="text" class="form-control" name="username" id="username" required>
+                      </div>
+
+                      <div class="form-group col-sm-5 col-12">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row justify-content-around d-flex">
+                      <div class="form-group col-sm-5 col-12">
+                        <label for="firstname">Ad</label>
+                        <input type="text" class="form-control" name="firstname" id="firstname" required>
+                      </div>
+
+                      <div class="form-group col-sm-5 col-12">
+                        <label for="phone">Mobil</label>
+                        <input type="phone" id="phone" class="form-control" name="phone" required>
+                      </div>
+                    </div>
+
+                    <div class="form-row justify-content-around d-flex">
+                      <div class="form-group col-sm-5 col-12">
+                        <label for="lastname">Soyad</label>
+                        <input type="text" class="form-control" name="lastname" id="lastname" required>
+                      </div>
+
+
+                      <div class="form-group col-sm-5 col-12">
+
+
+                        <label for="password">Şifrə</label>
+                        <div class="input-group ">
+                          <input type="text" id="password" class="form-control" rel="gp" data-size="8"
+                            data-character-set="a-z,A-Z,0-9,#" required>
+
+
+                          <button type="button" class="input-group-append">
+                            <span class="input-group-text">Generate</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form-row justify-content-around align-items-center d-flex">
+                      <div class="form-group col-sm-9 col-lg-8 col-12">
+                        <div class="custom-control custom-radio active">
+                          <input type="radio" class="custom-control-input" id="admin" name="user-type">
+                          <label class="custom-control-label" for="admin">Admin</label>
+                        </div>
+
+                        <div class="custom-control custom-radio">
+                          <input type="radio" id="user" name="user-type" id="user" class="custom-control-input">
+                          <label class="custom-control-label" for="user">İstifadəçi</label>
+                        </div>
+
+                      </div>
+
+                      <div class="form-group col-lg-2 col-sm-2 col-12">
+                        <button type="submit" class="create-button btn  btn-success btn-md"> İstifadəçi yarat </button>
+                      </div>
+
+
+
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+
+
+  <script>
+    $(".create-button").click(function () {
+      if (($("#username").val() != "") && ($("#firstname").val() != "") && ($("#lastname").val() != "") && ($(
+          "#phone").val() != "") && ($("#email").val() != "") && ($("#password").val() != "")) {
+        alert("Yeni istifadəçi əlavə olundu");
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

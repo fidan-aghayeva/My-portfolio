@@ -1,0 +1,114 @@
+@import "common.css";
+
+.video {
+  padding: 114px 0 150px 0;
+  background-color: #f2f5fb;
+}
+
+.videoTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 42px;
+}
+
+.videoTitle h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+}
+
+.videoTitle a {
+  position: relative;
+  color: #1b77bd;
+  font-size: 16px;
+  text-decoration: underline !important;
+}
+
+.videoGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.videoExample img {
+  height: 550px;
+  width: 100%;
+}
+
+.videoExample .fa-play-circle {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 23%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.videoGroup img {
+  width: 100%;
+  height: 278px;
+}
+
+.videoPlay {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.videoPlay:hover img {
+  opacity: 0.2;
+  transition: all 0.3 ease;
+}
+
+.videoPlay:hover .fa-play-circle {
+  color: #1b77bd;
+}
+
+.videoGroup .videoPlay i {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.videoGroup div {
+  width: 23%;
+  color: #0a3352;
+  font-weight: 600;
+}
+
+.videoGroup p {
+  padding-top: 24px;
+}
+
+.videoExample {
+  margin-bottom: 141px;
+}
+
+.videoExample div {
+  background-color: white;
+  padding: 20px 55px;
+}
+
+.videoExample p {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-weight: 600;
+  font-size: 23px;
+  padding-bottom: 20px;
+  color: #0a3352;
+}
+
+.videoExample span {
+  font-size: 14px;
+  color: #0a3352;
+}
+
+.sameVideos {
+  font-weight: 600;
+  color: #0a3352;
+  font-size: 16px;
+  padding-bottom: 52px;
+}

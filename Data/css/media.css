@@ -1,0 +1,163 @@
+@media only screen and (max-width:576px) {
+    .about_nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .about_logo {
+        width: 40%;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    .services_main {
+        flex-direction: column;
+    }
+
+    .services_box {
+        width: 100%;
+    }
+
+    .about_container {
+        background-image: url('../images/mediaback.png');
+    }
+
+    .welcome_content {
+        width: 100%;
+    }
+
+    .welcome_content h2 {
+        font-size: 1.9rem;
+    }
+
+    .welcome_content {
+        padding: 70% 8% 0 8%;
+    }
+
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    #works {
+        padding: 70px 0;
+    }
+
+    .container_foot {
+        flex-direction: column;
+    }
+
+    .foot_item {
+        width: 100% !important;
+    }
+
+    .foot_item h3 {
+        padding-top: 20px;
+    }
+
+    .logoitem {
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .middle {
+        width: 80%;
+    }
+
+    .middle a {
+        width: 35px;
+        height: 35px;
+    }
+
+    .middle a i {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+
+@media only screen and (min-width:577px) and (max-width:768px) {
+    .about_nav {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    .about_logo {
+        width: 25%;
+        height: 65px;
+    }
+
+    .about_container {
+        background-image: url('../images/mediaback.png');
+        height: 650px;
+    }
+
+    .welcome_content {
+        width: 100%;
+    }
+
+    .welcome_content {
+        padding: 25% 8% 0 8%;
+    }
+
+    .services_box {
+        width: 46%;
+    }
+
+    .container_foot {
+        flex-direction: column;
+    }
+
+    .foot_item {
+        width: 100% !important;
+    }
+
+    .foot_item h3 {
+        padding-top: 20px;
+    }
+
+    .foot_item input {
+        display: flex;
+    }
+
+    .logoitem {
+        text-align: center;
+        padding: 0 !important;
+    }
+
+    .middle {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+    heade.about_logo {
+        height: 65px;
+    }
+
+    .welcome_content h2 {
+        font-size: 2.3rem;
+    }
+
+    .welcome_content {
+        padding: 23% 0 0 10%;
+    }
+
+    .about_container {
+        height: 650px;
+    }
+
+    .logoitem img {
+        width: 180px;
+    }
+
+    .middle {
+        width: 80%;
+    }
+}

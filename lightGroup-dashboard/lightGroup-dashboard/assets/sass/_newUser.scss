@@ -1,0 +1,20 @@
+.new-user {
+  width: 90%;
+
+  .card {
+    background-color: $light-grey;
+    @include shadow-box;
+
+    .card-title {
+      h4 {
+        font-size: 35px;
+        color: $medium-grey;
+        margin-bottom: 25px;
+      }
+    }
+
+    .card-content {
+      color: $dark-grey;
+    }
+  }
+}

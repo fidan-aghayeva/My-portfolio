@@ -1,0 +1,139 @@
+body {
+  background-color: #f0f3f5;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+.newform {
+  width: 100%;
+}
+
+.newform .form_container {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 10px rgba(2, 74, 152, 0.05);
+          box-shadow: 5px 5px 10px rgba(2, 74, 152, 0.05);
+}
+
+.newform .form_container .formContent h3 {
+  color: #8d8d8d;
+  font-size: 28px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.newform .form_container .formContent p {
+  color: #8d8d8d;
+  margin-left: 15px;
+}
+
+.newform .form_container .formContent .title {
+  font-size: 20px;
+}
+
+.newform .form_container .formContent .title input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #c9c7c7;
+}
+
+.newform .form_container .formContent .description {
+  border-bottom: 1px solid #c9c7c7;
+  text-indent: 5px;
+  margin-bottom: 70px;
+}
+
+.newform .form_container .formContent .description input {
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.newform .form_container .formContent .firstquestion {
+  padding: 5px 150px 5px 10px;
+  color: #443a3a;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.newform .form_container .formContent .firstquestion input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid #c9c7c7;
+}
+
+.newform .form_container .formContent input:focus {
+  outline: none;
+}
+
+.newform .form_container .formContent select {
+  border: 1px solid #c5c4c4;
+  color: #9c9c9c;
+  background-color: transparent;
+  border-radius: 4px;
+  position: absolute;
+  right: 25px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.newform .form_container .formContent select:focus {
+  outline: none !important;
+}
+
+.newform .form_container .formContent .radiosection,
+.newform .form_container .formContent .checksection,
+.newform .form_container .formContent .opensection {
+  padding: 30px 10px;
+  color: #8d8d8d;
+  font-size: 15px;
+}
+
+.newform .form_container .formContent .radiosection .digertype,
+.newform .form_container .formContent .checksection .digertype,
+.newform .form_container .formContent .opensection .digertype {
+  border: none;
+  border-bottom: 1px solid #8d8d8d;
+  background: none;
+}
+
+.newform .form_container .formContent .opensection span {
+  width: 200px;
+}
+
+.newform .form_container .formContent .box {
+  display: none;
+}
+
+.newform .form_container .formContent .text {
+  border: none;
+  background: none;
+  color: #443a3a;
+}
+
+.newform .form_container .other {
+  position: relative;
+  top: 40px;
+}
+
+.newform .form_container .other .text-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.newform .bagla .btn-outline-primary:hover {
+  color: white !important;
+}
+
+.newform .btn {
+  -webkit-transition: all 1s ease-in-out !important;
+  transition: all 1s ease-in-out !important;
+  margin-right: 10px;
+}
+
+.tabcontent {
+  display: none;
+}
+/*# sourceMappingURL=tamamla.css.map */

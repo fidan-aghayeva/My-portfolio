@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel='icon' href='assets/img/survey.png' type= ' image/x-icon'/>
+  <!-- Bootstrap Styles-->
+  <link href="assets/lib/bootstrap.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-grid.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-reboot.css" rel="stylesheet" />
+  <!-- FontAwesome Styles-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles-->
+  <link href="assets/sass/style.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Fonts-->
+
+
+
+
+
+</head>
+
+<body>
+
+  <section class="login min-vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="card col-xl-4 col-lg-6 col-md-6 col-sm-8 col-10  mx-auto  p-10">
+          <div class="card-body">
+            <div class="card-title text-center">
+              <h5>Login</h5>
+            </div>
+
+            <div class="card-content">
+              <form>
+                <div class="form-group">
+                  <label for="username">İstifadəçi adı</label>
+                  <input type="text" class="form-control" name="username" id="user-username"
+                    placeholder="İstifadəçi adı" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">Parol</label>
+                  <input type="password" class="form-control" name="password" id="user-password" placeholder="Parol"
+                    required>
+                </div>
+
+                <div class="form-group row justify-content-center">
+                  <button type="button" class="enter-button btn btn-primary btn-md"> Daxil ol </button></div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+      <footer class="container footer">
+        <div class="row d-flex justify-content-center py-4">
+          <small> &copy; Copyright - 2020 | Datacity product</small>
+        </div>
+      </footer>
+
+    </div>
+
+
+  </section>
+
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+
+  <script>
+    $(".enter-button").onclick(function () {
+      if (($("#user-password").val != "") && ($("#user-username").val != "")) {
+        window.location.href = "mainPage.html";
+      }
+    });
+  </script>
+
+</body>
+
+</html>

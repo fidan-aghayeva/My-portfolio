@@ -1,0 +1,40 @@
+@import "common";
+
+.login {
+  background-size: cover;
+  height: 100%;
+
+  .card {
+    @include shadow-box;
+    background-color: white;
+
+    .card-body {
+      .card-title {
+        h5 {
+          font-size: 45px;
+          font-weight: bold;
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    .card-content {
+      label {
+        font-size: 15px;
+        color: $dark-grey;
+      }
+
+      .enter-button {
+        padding: 10px 50px;
+        margin-top: 25px;
+      }
+    }
+  }
+
+  .footer {
+    opacity: 0.4;
+    position: absolute;
+    bottom: 0;
+    font-size: 20px;
+  }
+}

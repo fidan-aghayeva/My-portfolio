@@ -1,0 +1,85 @@
+@import "common.css";
+
+.videoGalery {
+  padding: 114px 0 85px 0;
+  background-color: #f2f5fb;
+}
+
+.videoGalery h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 42px;
+}
+
+.videoGroup {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 77px;
+}
+
+.videoGroup div {
+  width: 23%;
+  color: #0a3352;
+  font-weight: 600;
+}
+
+.videoGroup p {
+  padding-top: 24px;
+}
+
+.videoPlay .fa-play-circle {
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  top: 32%;
+  left: 40%;
+}
+
+.videoPlay img {
+  width: 100%;
+  height: 278px;
+}
+
+.videoPlay {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.videoPlay:hover img {
+  opacity: 0.2;
+  transition: all 0.3 ease;
+}
+
+.videoPlay:hover .fa-play-circle {
+  color: #1b77bd;
+}
+
+.controlCarousel i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 22px;
+  height: 22px;
+  font-size: 18px;
+  background-color: white;
+  border-radius: 50%;
+  color: #1b77bd;
+  cursor: pointer;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  font-size: 16px !important;
+  padding: 0 !important;
+  margin: 0 5px !important;
+  line-height: 1.8 !important;
+  color: #1b77bd;
+  background-color: transparent !important;
+  border: none !important;
+}
+.page-link:focus {
+  outline: none !important;
+}

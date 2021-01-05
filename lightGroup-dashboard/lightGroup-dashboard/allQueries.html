@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Queries</title>
+  <link rel='icon' href='assets/img/survey.png' type= ' image/x-icon'/>
+  <!-- Bootstrap Styles-->
+  <link href="assets/lib/bootstrap.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-grid.css" rel="stylesheet" />
+  <link href="assets/lib/bootstrap-reboot.css" rel="stylesheet" />
+  <!-- FontAwesome Styles-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles-->
+  <link href="assets/sass/style.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+
+    <!-- Sidebar -->
+    <nav id="sidebar">
+<div class="sidebarbutton">
+      <button type="button" id="sidebarCollapse" class="btn btn-outline-primary btn-lg text-right">
+        <i class="fa fa-bars"></i>
+        <span class="sr-only">Toggle Menu</span>
+      </button>
+</div>
+
+      <div class="username d-flex align-items-center flex-column justify-content-center">
+        <h2 class="text-center" id="sideH2">
+          Mammadova Leyla
+        </h2>
+        <p class="badge badge-secondary">Admin</p>
+      </div>
+
+      <ul class="list-unstyled components align-self-center d-flex flex-column">
+        <li class="">
+          <a href="mainPage.html"><i class="fas fa-rocket"></i> <span id="sideSpan">Dashboard</span> </a>
+        </li>
+        <li>
+          <a href="#" class="users-nav"><i class="fas fa-users"></i> <span id="sideSpan">
+              İstifadəçilər</span></a>
+          <ul class=" list-unstyled active dropdown align-items-center d-flex flex-column">
+            <li> <a href="allUsers.html"><i class="fas fa-users-cog"></i> <span id="sideSpan">Bütün</span></a></li>
+            <li><a href="newUser.html"><i class="fas fa-user-plus"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="surveys"><i class="fas fa-file"></i> <span id="sideSpan">
+              Sorğular</span></a>
+          <ul class=" list-unstyled active  align-items-center d-flex flex-column">
+            <li class="active"> <a href="allQueries.html"><i class="fas fa-file-alt"></i> <span
+                  id="sideSpan">Bütün</span></a></li>
+            <li><a href="newform.html"><i class="fas fa-file"></i> <span id="sideSpan">Yarat</span></a></li>
+
+          </ul>
+        </li>
+
+        <li>
+
+          <a href="./profile.html"><i class="fas fa-cog"></i> <span id="sideSpan">Parametrlər </span>
+          </a>
+        </li>
+
+      </ul>
+      <div class="footer text-center">
+        <a href="./mainPage.html"><i class="fas fa-sign-out-alt"></i> <span id="sideSpan">Profildən
+            çıxış</span></a>
+      </div>
+
+    </nav>
+    <div id="content" class="">
+      <div class="mobileMenuIcon"><i class="fa fa-bars"></i></div>
+      <section class="users min-vh-100 d-flex align-items-center justify-content-center py-4">
+
+        <div class="container">
+          <div class="">
+            <table
+              class="table table-striped table-responsive-xl  table-light col-xl-12 col-lg-12 col-md-12 col-sm-12  mx-auto ">
+
+              <caption class="table-active col-12">
+
+                <span>Bütün Sorğular </span>
+
+                <a class="export-button btn btn-md  btn-outline-primary " href="">Export </a>
+
+                <a class=" add-button btn btn-m  btn-outline-primary " href="./newform.html">Əlavə et</a>
+
+              </caption>
+
+              <thead>
+
+                <th scope="col">
+                  <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="select-all">
+                    <label class="custom-control-label" for="select-all"></label>
+                  </div>
+
+                </th>
+                <th scope="col">#</th>
+                <th scope="col">Ad</th>
+                <th scope="col">Açıqlama</th>
+                <th scope="col">Tarix</th>
+                <th scope="col">Müraciət sayı</th>
+                <th scope="col">Əməliyyatlar</th>
+
+              </thead>
+              <tbody>
+
+                <tr>
+                  <td scope="col">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1">
+                      <label class="custom-control-label" for="customCheck1"></label>
+                    </div>
+
+                  </td>
+                  <td scope="">1</td>
+                  <td>Custumor Ratio</td>
+                  <td>lorem lor...</td>
+                  <td>31/12/20</td>
+                  <td>10</td>
+                  <td class="buttons">
+                    <button type="button"><a href="./edit.html" class="btn text-success">Redaktə et</a></button>
+                    <button type="button"><a href="./results.html" class="btn edit text-primary">Nəticələr</a></button>
+                    <button type="button" class="btn delete-button text-danger" data-toggle="modal"
+                      data-target="#exampleModal">Sil</button>
+                    <button type="button"><a class="btn text-success" href="./complete.html">Tamamla</a></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td scope="col">
+                    <div class="custom-control custom-checkbox">
+                      <input type="checkbox" class="custom-control-input" id="customCheck3">
+                      <label class="custom-control-label" for="customCheck3"></label>
+                    </div>
+
+                  </td>
+                  <td scope="col">2</td>
+                  <td scope="col">Custumor Ratio</td>
+                  <td scope="col">lorem lor...</td>
+                  <td scope="col">31/12/20</td>
+                  <td scope="col">10</td>
+                  <td scope="col" class="buttons">
+                    <button type="button"><a href="./edit.html" class="btn text-success">Redaktə et</a></button>
+                    <button type="button"><a href="./results.html" class="btn edit text-primary">Nəticələr</a></button>
+                    <button type="button" class="btn delete-button text-danger" data-toggle="modal"
+                      data-target="#exampleModal">Sil</button>
+                    <button type="button"><a class="btn text-success" href="./complete.html">Tamamla</a></button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="col"></th>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                  <td scope="col"></td>
+                </tr>
+
+                <tr>
+                  <th scope="row"></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+
+        <div class="modal" id="edit-modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Redaktə et</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-row justify-content-around d-flex">
+                    <div class="form-group col-sm-5 col-12">
+                      <label for="username">İstifadəçi adı</label>
+                      <input type="text" class="form-control" name="username" id="username">
+                    </div>
+
+                    <div class="form-group col-sm-5 col-12">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" name="email" id="email">
+                    </div>
+                  </div>
+
+
+                  <div class="form-row justify-content-around d-flex">
+                    <div class="form-group col-sm-5 col-12">
+                      <label for="firstname">Ad</label>
+                      <input type="text" class="form-control" name="firstname" id="firstname" required>
+                    </div>
+
+                    <div class="form-group col-sm-5 col-12">
+                      <label for="phone">Mobil</label>
+                      <input type="phone" id="phone" class="form-control" name="phone" required>
+                    </div>
+                  </div>
+
+                  <div class="form-row justify-content-around d-flex">
+                    <div class="form-group col-sm-5 col-12">
+                      <label for="lastname">Soyad</label>
+                      <input type="text" class="form-control" name="lastname" id="lastname" required>
+                    </div>
+
+
+                    <div class="form-group col-sm-5 col-12">
+
+
+                      <label for="password">Şifrə</label>
+                      <div class="input-group ">
+                        <input type="text" id="password" class="form-control" rel="gp" data-size="8"
+                          data-character-set="a-z,A-Z,0-9,#" required>
+
+
+                        <button type="button" class="input-group-append">
+                          <span class="input-group-text">Generate</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="form-row justify-content-around align-items-center d-flex">
+                    <div class="form-group col-sm-9 col-lg-11 col-12">
+                      <div class="custom-control custom-radio active">
+                        <input type="radio" class="custom-control-input" id="admin" name="user-type">
+                        <label class="custom-control-label" for="admin">Admin</label>
+                      </div>
+
+                      <div class="custom-control custom-radio">
+                        <input type="radio" id="user" name="user-type" id="user" class="custom-control-input">
+                        <label class="custom-control-label" for="user">İstifadəçi</label>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary save-changes-button">Yadda saxla</button>
+                    <button type="button" class="btn btn-secondary cancel-button" data-dismiss="modal">Ləğv
+                      et</button>
+                  </div>
+
+                </form>
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <div id="delete-modal" class="modal" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Diqqət! </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Bu məlumatı silmək istədiyinizdən əminsinizmi?</p>
+              </div>
+              <div class="modal-footer">
+                <form action="">
+                  <button type="submit" class="save-delete-button btn btn-primary">Sil</button>
+                  <button type="button" class=" cancel-button btn btn-secondary" data-dismiss="modal">Ləğv et</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+    </div>
+  </div>
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+  <script>
+
+  </script>
+</body>
+
+</html>

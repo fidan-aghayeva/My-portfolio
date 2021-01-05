@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Press-relizlər</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/advertisements.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <header class="d-flex justify-content-center align-items-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7 col-md-7 col-2">
+                    <div>
+                        <a href="./index.html">
+                            <img src="./images/logo.png" alt="">
+                        </a>
+                        <span class="line"></span>
+                        <div class="title">
+                            <span>Enerji Məsələlərini<br />Tənzimləmə Agentliyi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-5 col-10 d-flex align-items-center justify-content-end">
+                    <form class="form">
+                        <div class="search">
+                            <input type="text" placeholder="Axtarış..." />
+                            <a href=""><i class="fa fa-search"></i></a>
+                        </div>
+                    </form>
+                    <div class="socialMediaIcons px-4">
+                        <a href=""><i class="fa fa-facebook-f"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-linkedin"></i></a>
+                    </div>
+                    <span class="call"> <i class="fa fa-phone"></i> 974 </span>
+                    <ul class="langMenu">
+                        <li>AZ <i class="fa fa fa-angle-down"></i></li>
+                        <ul class="subLangMenu">
+                            <li><a href="">AZ</a></li>
+                            <li><a href="">EN</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Menu -->
+    <section class="menu">
+        <div class="menuAbsolute">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 navMenu">
+                        <div class="homeIcon">
+                            <a class="navbar-brand" class="homeIcon" href="./index.html">
+                                <i class="fa fa-home"></i>
+                                <span class="line2"></span>
+                            </a>
+                        </div>
+                        <nav id="menu">
+                            <label for="tm" id="toggle-menu">
+                                <form action="">
+                                    <div class="search">
+                                        <input type="text" placeholder="Axtarış..." />
+                                        <a href=""><i class="fa fa-search"></i></a>
+                                    </div>
+                                </form>
+                                <span class="drop-icon barIcon">
+                                    <div onclick="myFunction(this)">
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                    </div>
+                                </span>
+                            </label>
+                            <input type="checkbox" id="tm">
+                            <ul class="main-menu clearfix">
+                                <li><a href="#">Agentlik
+                                        <span class="drop-icon"><i class="fa fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm0"><i
+                                                class="fa fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm0">
+                                    <ul class="sub-menu">
+                                        <li><a href="./about.html">Haqqımızda</a></li>
+                                        <li><a href="./charterOfTheAgency.html">Agentliyin nizamnaməsi</a></li>
+                                        <li><a href="#">Fəaliyyət istiqamətləri
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i> <i
+                                                        class="fa fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm1"><i
+                                                        class="fa fa-angle-right"></i> <i
+                                                        class="fa fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm1">
+                                            <ul class="sub-menu">
+                                                <li><a href="./regulation.html">Tənzimləmə</a></li>
+                                                <li><a href="./control.html">Nəzarət</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Rəhbərlik
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i><i
+                                                        class="fa fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm2"><i
+                                                        class="fa fa-angle-right"></i><i
+                                                        class="fa fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm2">
+                                            <ul class="sub-menu">
+                                                <li><a href="./leaderShip.html">İdarə heyətinin sədri</a></li>
+                                                <li><a href="./deputy.html">İdarə heyətinin sədrinin müavinləri</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Struktur</a></li>
+                                        <li><a href="./reports.html">İllik hesabatlar</a></li>
+                                        <li><a href="./internationalCooperation.html">Beynəlxalq əməkdaşlıq</a></li>
+                                        <li><a href="./branches.html">Filiallar</a></li>
+                                        <li><a href="#">Vakansiyalar
+                                                <span class="drop-icon"><i class="fa fa-angle-right"></i><i
+                                                        class="fa fa fa-angle-up rotate down"></i></span>
+                                                <label title="Toggle Drop-down" class="drop-icon" for="sm3"><i
+                                                        class="fa fa-angle-right"></i><i
+                                                        class="fa fa fa-angle-up rotate down"></i></label>
+                                            </a>
+                                            <input type="checkbox" id="sm3">
+                                            <ul class="sub-menu">
+                                                <li><a href="./vacancies.html">Mövcud vakansiyalar</a></li>
+                                                <li><a href="./recruitmentRules.html">İşə qəbul qaydaları</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Qanunvericilik
+                                        <span class="drop-icon"><i class="fa fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm4"><i
+                                                class="fa fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm4">
+                                    <ul class="sub-menu">
+                                        <li><a href="./laws.html">Qanunlar</a></li>
+                                        <li><a href="./orders.html">Prezidentin qanun və sərəncamları</a></li>
+                                        <li><a href="./ministersLaws.html">Nazirlər kabinetinin qərar və
+                                                sərəncamları</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">İstehlakçılar
+                                        <span class="drop-icon"><i class="fa fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm5"><i
+                                                class="fa fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm5">
+                                    <ul class="sub-menu">
+                                        <li><a href="./household.html">Məişət və qeyri-məişət</a></li>
+                                        <li><a href="./subConsumer.html">Biz istehlakçılar üçün nə edirik?</a></li>
+                                        <li><a href="./debt.html">Borcunu öyrən</a></li>
+                                        <li><a href="./apply.html">Bizə müraciət et</a></li>
+                                        <li><a href="./citizenAppeals.html">Vətəndaş müraciətləri (statistika)</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Elektron xidmətlər
+                                        <span class="drop-icon"><i class="fa fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm6"><i
+                                                class="fa fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm6">
+                                    <ul class="sub-menu">
+                                        <li><a href="./login.html">Elektrik qurğularının istismarına buraxılış aktının
+                                                verilməsi</a></li>
+                                        <li><a href="./login.html">Elektrik enerjisi təchizatı üzrə layihələrin
+                                                razılaşdırılması
+                                            </a></li>
+                                        <li><a href="./login.html">Qaz təchizatı üzrə layihələrin razılaşdırılması </a>
+                                        </li>
+                                        <li><a href="./login.html">Sənaye qaz qurğularının istismarına icazə</a></li>
+                                        <li><a href="./login.html">Texniki istismar və Texniki Təhlükəsizlik qaydaları
+                                                üzrə
+                                                biliyin yoxlanılması</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Media
+                                        <span class="drop-icon"><i class="fa fa fa-angle-up rotate down"></i></span>
+                                        <label title="Toggle Drop-down" class="drop-icon" for="sm7"><i
+                                                class="fa fa fa-angle-up rotate down"></i></label>
+                                    </a>
+                                    <input type="checkbox" id="sm7">
+                                    <ul class="sub-menu">
+                                        <li><a href="./pressReliz.html">Press-relizlər</a></li>
+                                        <li><a href="./whatTheMediaWrites.html">Bizim haqqımızda media nə yazır</a></li>
+                                        <li><a href="./presentation.html">Nitqlər və təqdimatlar</a></li>
+                                        <li><a href="./photoGalery.html">Fotoqalereya</a></li>
+                                        <li><a href="./videoGalery.html">Videoqalereya</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="press">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="content">
+                        <h3>PRESS-RELIZLƏR</h3>
+                        <div class="pressPagination">
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="./advertisements.html">
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+                                        <div class="pressItem">
+                                            <button class="newsButton">XƏBƏRLƏR</button>
+                                            <p>
+                                                Enerji Məsələlərini Tənzimləmə Agentliyinin Nizamnaməsi”nin 3.1.11-ci
+                                                yarımbəndinə dəyişikliklər edilib
+                                            </p>
+                                            <span>
+                                                Bakı şəhəri, 17 avqust 2020-ci il
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                                        <img src="./images/advertisement.png" alt="">
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="controlCarousel d-flex justify-content-center align-items-center">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">25</a></li>
+                                <li class="page-item"><a class="page-link" href="#">26</a></li>
+                                <li class="page-item"><a class="page-link" href="#">27</a></li>
+                                <li class="page-item"><a class="page-link" href="#"><i
+                                            class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="logoContainer">
+                <div class="logos">
+                    <img src="./images/image 14.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 17.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 18.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 20.png" alt="" />
+                </div>
+                <div class="logos">
+                    <img src="./images/image 15.png" alt="" />
+                </div>
+            </div>
+
+            <div class="row py-5">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div>
+                        <img src="./images/footerLogo.png" alt="" />
+                        <p class="logoParagraf">
+                            Enerji Məsələlərini Tənzimləmə Agentliyi
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="footerItem">
+                        <h5>Kontaktlar</h5>
+                        <ul>
+                            <li>Telefon: <span>(+994 12) 598-16-53/54/55</span></li>
+                            <li>Faks: <span>(+994 12) 566-09-40</span></li>
+                            <li>Email: <a href="">office@regulator.gov.az</a></li>
+                            <li class="address">
+                                Baş Ofis:
+                                <span>Bakı şəhəri, Heydər Əliyev prospekti 152 "Çinar Plaza"
+                                    Biznes Mərkəzi, AZ1029</span>
+                            </li>
+                        </ul>
+                        <div class="contactFooter">
+                            <span><i class="fa fa-phone"></i>974</span>
+                            <a href=""><i class="fa fa-facebook-f"></i></a>
+                            <a href=""><i class="fa fa-twitter"></i></a>
+                            <a href=""><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-xs-12">
+                    <div class="footerItem">
+                        <h5>Faydalı keçidlər</h5>
+                        <ul>
+                            <li><a href="">Azərbaycan Respublikasının Prezidenti</a></li>
+                            <li><a href="">Milli Məclis</a></li>
+                            <li><a href="">Nazirlər Kabineti</a></li>
+                            <li><a href="">Heydər Əliyev Fondu</a></li>
+                            <li><a href="">Energetika Nazirliyi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="author text-center">
+            <p>AERA © 2020 All Right Reserved. Developed by Webcoder</p>
+        </div>
+    </footer>
+
+    <script src="./about.js"></script>
+</body>
+
+</html>

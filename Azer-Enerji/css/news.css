@@ -1,0 +1,154 @@
+@import "common.css";
+
+.newsSection,
+.advertisementHome {
+  background-color: #f2f5fb;
+  height: auto;
+  overflow: hidden;
+}
+
+.advertisementHome {
+  padding: 114px 0 0 0;
+}
+
+.advertisementHome .news {
+  padding: 0 0 42px 0;
+}
+
+.advertisement {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 162px;
+}
+
+.advertisement div {
+  width: 50%;
+  padding-left: 30px;
+}
+
+.advertisement h5 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0a3352;
+  padding-bottom: 15px;
+}
+
+.advertisement p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #0a3352;
+}
+
+.advertisement img {
+  width: 50%;
+}
+
+.newsImg img {
+  width: 100%;
+}
+
+.news {
+  font-size: 14px;
+  padding: 30px 0 40px 0;
+}
+
+.news a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b77bd;
+  width: 110px;
+  height: 34px;
+  border-radius: 15px;
+  color: white;
+}
+
+.news a:hover {
+  color: #1b77bd;
+  background-color: white;
+  box-shadow: 0px 10px 14px -6px #a3afc6;
+}
+
+.news span:last-child {
+  color: #0a3352;
+  margin: 0 35px;
+}
+
+.content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #0a3352;
+  padding-bottom: 40px;
+}
+
+.share {
+  padding: 60px 0 50px 0;
+  height: 200px;
+}
+
+.share div {
+  width: 50%;
+  float: left;
+}
+
+.share p {
+  font-weight: 600;
+  padding-bottom: 15px;
+}
+
+.share i {
+  display: inline-flex;
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.share .fa-facebook-f {
+  background-color: #4267b2;
+  margin-right: 10px;
+}
+
+.share .fa-twitter {
+  background-color: #1da1f3 !important;
+  margin-right: 10px;
+}
+
+.fa-whatsapp {
+  background-color: #00e777;
+}
+
+.print {
+  text-align: right;
+  padding-top: 50px;
+}
+
+.print a {
+  font-size: 16px;
+  color: #0a3352;
+  text-decoration: underline !important;
+}
+
+.tags {
+  background-color: white;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #0a3352;
+}
+
+.tags p {
+  font-weight: 500;
+}
+
+.tags span {
+  display: inline-flex;
+  font-weight: 300;
+  border-radius: 15px;
+  background-color: #f2f5fb;
+  padding: 5px 20px;
+  margin: 15px 15px 0 0;
+}

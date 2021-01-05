@@ -1,0 +1,102 @@
+@import "common.css";
+
+.complain,
+.debt,
+.apply {
+  padding: 114px 0 150px 0;
+  background-color: #f2f5fb;
+  height: auto;
+}
+
+.complain h3,
+.debt h3,
+.apply h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 30px;
+}
+
+.complainForm,
+.debtForm {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0a3352;
+  width: 50%;
+}
+.applyForm {
+  width: 60%;
+}
+.complainForm input,
+.complainForm select,
+.debtForm input,
+.apply input,
+.apply select {
+  border: none;
+  width: 100%;
+  height: 37px;
+  background-color: white;
+  text-indent: 20px;
+  font-size: 12px;
+}
+
+.complainForm select,
+.apply select {
+  text-indent: 15px;
+  color: #0a3352;
+  font-size: 12px;
+}
+
+.complainForm input:focus,
+.complainForm select:focus,
+.debtForm input:focus,
+.apply input:focus,
+.apply select:focus {
+  outline: none;
+}
+
+.complainForm button,
+.debtForm button,
+.applyForm button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 148px;
+  height: 37px;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #1b77bd;
+  margin: 10px auto 0 auto;
+  transition: all 0.3s ease;
+}
+
+.complain button:focus,
+.debtForm button:focus,
+.applyForm button:focus {
+  outline: none;
+}
+
+.complainForm button:hover,
+.debtForm button:hover,
+.applyForm button:focus {
+  color: #1b77bd;
+  background-color: white;
+  box-shadow: 0px 10px 14px -6px #a3afc6;
+}
+.debtForm label,
+.debtForm input,
+.applyForm label,
+.applyForm input,
+.applyForm select,
+.complainForm label,
+.complainForm input {
+  margin-bottom: 20px;
+}
+.debtForm .col-xl-6,
+.applyForm .col-xl-6,
+.complainForm .col-xl-6 {
+  padding: 0 !important;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Light Group</title>
+  <!-- Bootstrap Styles-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="./assets/js/scripts.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <!-- FontAwesome Styles -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Custom Styles-->
+  <link href="assets/sass/style.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="newform wrapper d-flex align-items-stretch">
+    <!-- Sidebar -->
+    <nav id="sidebar" class="d-flex justify-content-around flex-column ">
+
+      <button type="button" id="sidebarCollapse" class="btn btn-outline-primary btn-lg text-right">
+        <i class="fa fa-bars"></i>
+        <span class="sr-only">Toggle Menu</span>
+      </button>
+
+
+      <div class="username d-flex align-items-center flex-column justify-content-center">
+        <h2 class="text-center">
+          Mammadova Leyla
+        </h2>
+        <p class="badge badge-secondary">Admin</p>
+      </div>
+
+      <ul class="list-unstyled components align-self-center d-flex flex-column">
+        <li class="">
+          <a href="mainPage.html"> <img src="assets/img/shuttle.png" alt=""> <span>Dashboard</span> </a>
+        </li>
+        <li>
+          <a href="#" class="users"> <img src="assets/img/Path 591.png" alt=""> <span> İstifadəçilər</span></a>
+          <ul class=" list-unstyled active dropdown align-items-center d-flex flex-column">
+            <li> <a href="allUsers.html"><span>Bütün</span></a></li>
+            <li><a href="newUser.html"><span>Yarat</span></a></li>
+
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="surveys"> <img src="assets/img/google-forms.png" alt=""> <span> Sorğular</span></a>
+          <ul class=" list-unstyled active  align-items-center d-flex flex-column">
+            <li class="active"> <a href="allQueries.html"><span>Bütün</span></a></li>
+            <li><a href="newform.html"><span>Yarat</span></a></li>
+
+          </ul>
+        </li>
+
+        <li>
+
+          <a href="profile.html"> <img src="assets/img/Group 375.png" alt=""> <span>Parametrlər </span> </a>
+        </li>
+
+      </ul>
+      <div class="footer text-center">
+        <a href=""><img src="assets/img/logout.png" alt=""> <span>Profildən çıxış</span></a>
+      </div>
+
+    </nav>
+
+    <div id="content">
+      <section class="users-section min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="container form_container my-5">
+          <div class="row">
+            <div class="col-12">
+              <div class="formContent py-4 px-3">
+                <h3>Cavablara bax</h3>
+                <p class="title">
+                  <input type="text" placeholder="Form başlığı" required value="Birinci" readonly>
+                </p>
+                <p class="description">
+                  <input type="text" required placeholder="Açıqlama" value="Bu sorğu test məqsədi ilə hazırlanmışdır"
+                    readonly>
+                </p>
+                <p class="firstquestion">
+                  <input type="text" required placeholder="İlk sualımız budur ki,..." class="othertype">
+                </p>
+                <div class="checksection">
+                  <label><input type="checkbox" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  Digər <input class="othertype" type="text" value="Nümunə cavab" readonly />
+                </div>
+                <hr>
+
+                <p class="firstquestion">
+                  <input type="text" required placeholder="İlk sualımız budur ki,..." class="othertype">
+                </p>
+                <div class="radiosection">
+                  <label><input type="radio" name="rad" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="radio" name="rad" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="radio" name="rad" /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="radio" name="rad" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  Digər <input class="othertype" type="text" value="Nümunə cavab" readonly />
+                </div>
+                <hr>
+
+                <p class="firstquestion">
+                  <input type="text" required placeholder="İlk sualımız budur ki,..." readonly class="othertype">
+                </p>
+                <div class="opensection">
+                  Cavab <input class="othertype" type="text" value="Nümunə cavab" readonly />
+                </div>
+                <hr>
+
+                <p class="firstquestion">
+                  <input type="text" required placeholder="İlk sualımız budur ki,..." readonly class="othertype">
+                </p>
+                <div class="checksection">
+                  <label><input type="checkbox" /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  <label><input type="checkbox" checked /><input class="text" type="text" value="Birinci cavab"
+                      readonly></label><br />
+                  Digər <input class="othertype" type="text" value="Nümunə cavab" readonly />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>

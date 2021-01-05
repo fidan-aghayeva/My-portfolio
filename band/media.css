@@ -1,0 +1,81 @@
+@media only screen and (max-width:576px)
+{
+    .firstmenu li,.carousel h4, .carousel p, #search{
+        display: none;
+    }
+    .firstmenu li:first-child {
+        display: block;
+    }
+    #hammenu {
+        display: block;
+    }
+    #hamburgerul li {
+        padding: 15px 25px;
+    }
+    #hamburgerul li a {
+        color: white;
+        text-decoration: none;
+    }
+    #hamburgerul li:hover {
+        background-color: grey;
+    }
+    .theband ,.tourdates, .contact{
+        padding: 80px 20px;
+    }
+    .images {
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .images div {
+        width: 80%;
+    }
+    .cards {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards>div {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .contact h1 {
+        font-size: 30px;
+    }
+    .contact div:first-child i {
+        padding: 20px 0;
+    }
+    .contact ul {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .contact form {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .contact input {
+        width: 100%;
+    }
+    .contact button {
+        margin-left: 0;
+    }
+    .map {
+        height: 250px;
+    }
+}
+@media only screen and (min-width:577px) and (max-width:1024px)
+{
+    .slide {
+        height: 350px;
+        padding-top: 250px;
+    }
+ .theband, .tourdates,.contact {
+     padding: 80px 20px;
+ }
+ .map {
+     height: 300px;
+ }
+}

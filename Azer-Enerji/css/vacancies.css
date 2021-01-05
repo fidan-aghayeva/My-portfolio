@@ -1,0 +1,181 @@
+@import "common.css";
+
+.vacancies,
+.branches,
+.eService,
+.electricityAnswer {
+  background-color: #f2f5fb;
+  padding: 114px 0 200px 0;
+  height: auto;
+  overflow: hidden;
+}
+
+.vacancies h3,
+.branches h3,
+.eService h3,
+.electricityAnswer h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1b77bd;
+  padding-bottom: 42px;
+}
+
+.items>div {
+  float: left;
+}
+
+.items>div:first-child {
+  width: 80%;
+}
+
+.items>div:last-child {
+  width: 20%;
+}
+
+.branchesItem div,
+.eServicesItem div,
+.electricityItems div {
+  width: 100%;
+}
+
+.content a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b77bd;
+  padding: 15px 0;
+  width: 169px;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+.content a:hover {
+  color: white;
+}
+
+.accordion {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  color: #0a3352;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 20px;
+  text-align: left;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.branch,
+.accordion a {
+  color: #1b77bd;
+}
+.accordion .fa-angle-right {
+  font-size: 20px;
+  font-weight: 600;
+}
+.accordion:focus {
+  outline: none;
+}
+
+.panel {
+  width: 100%;
+  padding: 10px 0 30px 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  font-size: 16px;
+  color: #0a3352;
+}
+
+.eService .accordion {
+  padding: 0 30px 0 20px;
+}
+
+.eService .panel {
+  padding: 0 0 0 85px;
+}
+
+.branches .panel {
+  padding: 0 0 0 0 !important;
+}
+
+.panel h5 {
+  font-size: 16px;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.showPanel {
+  display: block;
+  margin-bottom: 30px !important;
+}
+
+.active {
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.eTags span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: #0a3352;
+  background-color: white;
+  border-radius: 15px;
+  height: 35px;
+  padding: 0 15px;
+  margin: 0 15px 15px 0;
+}
+
+.eServicesItems .panel p,
+.electricityAnswer .panel p {
+  font-size: 16px;
+  color: #0a3352;
+  font-weight: 300;
+  padding: 5px 0;
+  border-bottom: 2px solid #F2F5FB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eServicesItems .panel p a {
+  font-size: 16px;
+  color: #0a3352;
+  font-weight: 300;
+}
+.eServicesItems .panel p:last-child,
+.electricityAnswer .panel p:last-child {
+  border-bottom: 0;
+  padding-bottom: 10px;
+}
+
+.eServicesItems .panel img {
+  width: 18px;
+  height: 18px;
+  margin-right: 20px;
+}
+
+.rotate {
+  -moz-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.rotate.down {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180def);
+}

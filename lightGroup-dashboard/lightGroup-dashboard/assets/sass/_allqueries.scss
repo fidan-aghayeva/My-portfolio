@@ -1,0 +1,45 @@
+button {
+  transition: all 0.3s ease-in-out !important;
+}
+
+.users {
+  padding-left: 0 !important;
+
+  div:last-child {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+.table {
+
+  .btn-success:hover {
+    color: #28A745 !important;
+    background-color: white !important;
+    border: none;
+  }
+
+  .text-success {
+    border: none !important;
+  }
+
+  td,
+  th {
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+  }
+
+  .buttons button {
+    border: none;
+    padding: 0;
+background-color: transparent;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .users div:last-child {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

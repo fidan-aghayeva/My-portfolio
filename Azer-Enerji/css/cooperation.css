@@ -1,0 +1,42 @@
+@import 'common.css';
+
+.cooperation {
+    padding: 114px 0 139px 0;
+    background-color: #f2f5fb;
+}
+
+.cooperation h3 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #1b77bd;
+    padding-bottom: 12px;
+}
+
+.cooperationItems {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.cooperationItems img {
+    width: 100%;
+    height: 300px;
+}
+
+.mainContentCooperation {
+    padding: 15px 0 0 20px;
+}
+
+.mainContentCooperation a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #0A3352;
+    text-decoration: underline !important;
+}
+
+.mainContentCooperation p {
+    font-size: 16px;
+    color: #0A3352;
+    font-weight: 300;
+    padding-top: 10px;
+}
